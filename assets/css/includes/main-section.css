@@ -1,0 +1,96 @@
+section.about{
+    min-height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 10px 5%;
+    margin-bottom: 30px;
+}
+
+.about-me h3{
+    font-weight: 700;
+    font-size: 35px;
+    color: #343434;
+}
+.about-me p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #999999;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.picture-of-me{
+    position: relative;
+}
+.picture-of-me::after{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    z-index: -1;
+background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23343434' fill-opacity='0.12' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 80%;
+     transform: translate(-5%,25%); 
+
+}
+.picture-of-me img{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0; */
+    width: 90%;
+    height: 95%;
+    z-index: 10;
+    object-fit: cover;
+}
+.about-me-info p{
+    color: #748182;
+    font-weight: 500;
+    font-size: 16px;
+}
+.progress-bar{
+    background-color: #343434;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn-outline-dark:hover {
+    background-color: #343434!important;
+}
+.down:hover{
+    background-color: #ffffff!important;
+   color: #343434!important;
+   border: 1px solid #343434;
+}
+button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width:960px){
+    .picture-of-me img{
+        width: 100%;
+        height: ;: 100%;
+    }
+    .picture-of-me{
+        text-align: center; ;
+        margin-bottom: 2.5rem;
+    }
+    .picture-of-me::after{
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        z-index: -1;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23343434' fill-opacity='0.12' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+        top: 0;
+        left: 0;
+        height: 90%;
+        width: 100%;
+         transform: scale(1); 
+         transform: translateY(-2%); 
+    
+    }
+}

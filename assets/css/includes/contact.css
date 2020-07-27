@@ -1,0 +1,43 @@
+.cont-btn:hover a{
+    color: white !important;
+}
+
+.contact {
+    min-height: 150vh;
+    padding: 10px 5%;
+    background-color: #f7f7f7;
+}
+.contact-header{
+    font-weight: 800;
+}
+
+.icon-contact-div{
+    box-sizing: content-box;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 100%;
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: 0.7s;
+}
+.icon-contact-div:nth-of-type(2){
+    width: 50px;
+}
+.icon-contact-div:hover i{
+    color: #f7f7f7;
+}
+.icon-contact-div:hover{
+    background-color: #1c1c11;
+}
+.con-div h4{
+    font-weight: 700;
+}
+input,textarea{
+    outline: 0 !important;
+    border: none !important;
+}
+input:focus,textarea:focus{
+    outline: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}

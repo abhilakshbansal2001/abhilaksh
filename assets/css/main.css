@@ -1,0 +1,136 @@
+@import 'includes/common.css';
+@import 'includes/works.css';
+@import 'includes/header.css';
+@import 'includes/main-section.css';
+@import 'includes/intro-loader.css';
+@import 'includes/services.css';
+@import 'includes/works.css';
+@import 'includes/youtube.css';
+@import 'includes/contact.css';
+
+
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    border-color: 1.5px solid #f7f7f7;
+}
+
+
+/* ########################################## ANIMATION ################################### */
+a{
+    text-decoration: none!important;
+
+}
+.navigation{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.6s;
+    animation: transform 0.6s ease-in-out  1.5s   1  forwards;
+}
+
+
+@keyframes transform{
+   to {transform: translateY(0);
+    opacity: 1;}
+}
+.s2-pic-anim,.s2-about-anim{
+    opacity: 0;
+}
+.s2-pic-anim.animated,.s2-about-anim.animated{
+    opacity: 1;
+}
+.wi-75{
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+.wi-75.animated{
+
+    width: 75% !important;
+}
+/* #################### 90 */
+.wi-90{
+  width: 0%;
+  transition: width 0.5s ease-in;
+
+}
+.wi-90.animated{
+
+    width: 90% !important;
+}
+
+/* ############################ 80 */
+.wi-80{
+  width: 0%;
+  transition: width 0.5s ease-in;
+}
+.wi-80.animated{
+
+    width: 80% !important;
+}
+/* ############################ 65 */
+
+.wi-65{
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+.wi-65.animated{
+
+    width: 65% !important;
+}
+/* /################## TESTIMONIAL #################### */
+.client{
+    min-height: 80vh;
+    background-color: #f7f7f7;
+    padding-top: 4rem;
+}
+.testi-heading,.testi-content{
+    margin: 2rem 0;
+    opacity: 0;
+}
+.testi-heading.animated{
+    /* margin: 2rem 0; */
+    opacity: 1;
+}
+.testi-content.animated{
+    /* margin: 2rem 0; */
+    opacity: 1;
+}
+.lead{
+    font-weight: 500;
+    color: #748182;
+    font-size: 15px;
+    width: 75%;
+    margin: 15px auto;
+}
+.testi-photo{
+    border-radius: 50%;
+}
+@media (max-width:1000px){
+    .testi-photo{
+        height: 100px !important;
+        width: 100px !important;
+        text-align: center;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+    .teer{
+        text-align: center !important;
+    }
+}
+
+/* #############33 arrow for going up #################333 */
+.upper-arrow{
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    cursor: pointer;
+}
+.upper-arrow i{
+    color: #748182;
+    font-size: 22px;
+    animation: moving 0.5s ease-in-out  infinite  alternate;
+}
+@keyframes moving{
+    to{
+        transform: translateY(-10%);
+    }
+}
